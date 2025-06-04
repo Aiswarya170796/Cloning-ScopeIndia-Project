@@ -57,22 +57,32 @@
 
 
       <div class="container1" style="padding-top: 58px;">
-        <div class="col" style="padding-bottom: 100px;padding-top: 100px;background-color:#021b5b;background-image:url(https://scopeindia.org/images/snowpark-skis-headerbg2.jpg);height: 1000px;background-repeat: no-repeat;background-position:center ;background-attachment: fixed;">
-            <div class="container text-center">
-              <h1 style="color:rgb(238, 174, 46);font-size: 50px;padding-left: 30px;padding-top: 70px;font-weight: 700;">Placement Cell</h1>
-                <div class="col" style="padding-left: 25px;">
-                  <a href="https://maps.app.goo.gl/BCgBih5C293PHiS48" target="_blank">
-                  <img src="{%static 'images/5star.png' %}" style="width: 300px;  padding-top:10px;"></a>
-                  <p class="text-center" style="color:#fff;font-size:17px;">
-                    Google 4.9 * Rated Institute 
-                  </p>
-                  <p class="text-center" style="color:#fff;font-size: 25px;font-weight: 600;">
-                    1000's of Students are getting placed every year from SCOPE INDIA
-                  </p>
-                </div>
-            </div>
-        </div>
+  <div style="position: relative; height: 1000px; overflow: hidden;">
+
+    <!-- Image acting as background -->
+    <img src="{% static 'images/snowpark-skis-headerbg2.jpg' %}"
+         alt="Placement Background"
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: 0;">
+
+    <!-- Actual content -->
+    <div class="container text-center" style="position: relative; z-index: 1; padding-top: 100px; padding-bottom: 100px; background-color: rgba(2, 27, 91, 0.85);">
+      <h1 style="color: rgb(238, 174, 46); font-size: 50px; font-weight: 700;">Placement Cell</h1>
+      <div class="col" style="padding-left: 25px;">
+        <a href="https://maps.app.goo.gl/BCgBih5C293PHiS48" target="_blank">
+          <img src="{% static 'images/5star.png' %}" style="width: 300px; padding-top: 10px;">
+        </a>
+        <p class="text-center" style="color:#fff; font-size: 17px;">
+          Google 4.9 * Rated Institute
+        </p>
+        <p class="text-center" style="color:#fff; font-size: 25px; font-weight: 600;">
+          1000's of Students are getting placed every year from SCOPE INDIA
+        </p>
       </div>
+    </div>
+
+  </div>
+</div>
+
       <!-- Footer -->
     <footer class="text-center text-white" style="background-color:#021b5b;">
         <!-- Grid container -->
