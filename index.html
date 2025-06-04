@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopeindia Website</title>
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <style>
+            .masthead {
+    height: 100vh;
+    min-height: 400px;
+    background-image: url("{% static 'images/background.jpg' %}"); /* Ensure the correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+          .owl-carousel .owl-item img {
+              display: block;
+              width: 777px;
+              height: 500px;
+              object-fit: contain;
+             
+          }
+  
+  
+          #owl-demo {
+              /* background-color: #160b37; */
+              background-image: url("{% static 'images/snowpark-home-slider-background.jpg' %}");
+              margin-top: 0px;
+              /* width:100%;
+              height:100%; */
+              /* Adjusted top margin */
+          }
+  
+          .owl-carousel .owl-stage {
+              display: flex;
+              justify-content: space-between;
+          }
+  
+          .owl-item {
+              /* flex: 0 0 auto; */
+              margin-right: 420px;
+              /* Adjust the margin between each image */
+          }
+  
+          .owl-nav {
+              display: none !important;
+              /* Hide navigation buttons  */
+          }
+          #img1{
+    position:absolute;
+    left:460px; 
+    top:290px;
+    /* z-index:1; */
+}
+#change:hover{
+    color:orange !important;
+}
+/* #carousalexample{
+    /* position:relative; */
+ */
+#lialign{
+    padding-left: 100px;
+}
+#lialignright{
+    padding-left: 200px;
+}
+#lialignimage{
+    padding-left: 100px;
+}
+#regid{
+    border: 1px solid yellow !important;
+    background-image: linear-gradient(#f2b42d,#fd0300);
+
+}
+#log{
+    border: 1px solid yellow !important;
+    background-image: linear-gradient(#f2b42d,#fd0300);
+
+}
+#container{
+    padding-top:50px;
+    padding-left: 50px;
+    background-color:#f6f6f6 ;
+}
+#row{
+    background-image:"C:\Users\Aishwarya S S\Desktop\PythonProject\myproject\myapp\static\images\si-call-back-bg.jpg"
+}
+#tel{
+    border:1px solid grey;
+}
+#buttom{
+    display: inline-block;
+    text-align:center;
+    border:1px solid grey;
+
+}
+#call{
+    margin-left:5px;
+} 
+.mcb-section{
+    background-size:cover;
+    
+}
+.navbar {
+    position: fixed;
+    width: 100%; /* Ensures full-width */
+    top: 0;
+    z-index: 1000; 
+}
+
+.navbar-brand img {
+    height: 30px; /* Adjust size if needed */
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center; /* Center-align items on mobile */
+    }
+}
+
+.container-fluid{
+    padding-top: 100px;
+}
+      </style>
+  
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #071e67; width:100%;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left-aligned Menu -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/courses">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/placement">Placement Cell</a>
+            </li>
+        </ul>
+
+        <!-- Centered Logo -->
+        <a class="navbar-brand mx-auto" href="/">
+            <img src="{% static 'images/scopeindia.logo.png' %}" alt="Logo" width="50px" height="40px">
+        </a>
+
+        <!-- Right-aligned Menu -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/know">Know SCOPE INDIA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/register"><span id="regid">Register Now</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/login"><span id="log">Login</span></a>
+            </li>
+        </ul>
+
+        <!-- Navbar Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+
+     
+     <div class="masthead" style="padding-top: 150px;">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <img src="{% static 'images/scopeindia.logo2.png' %} "class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+         <div id="owl-demo" class="owl-carousel owl-theme">
+              <div class="item">
+                  <img src="{% static 'images/scope-india-full-stack-offer-feb20-share2024.jpg' %} "class="img-fluid">
+              </div>
+              <div class="item">
+                  <img src="{% static 'images/DEVOPS-SCOPE_INDIA.jpg'%}"class="img-fluid" >
+              </div>
+              <div class="item">
+                  <img src="{% static 'images/courses/scope-india-digital-marketing-course.jpg'%}" class="image-fluid" >
+              </div>
+              <div class="item">
+                  <img src="{% static 'images/scope-india-full-stack-intermediate-offer-sep2022-2%20(1).jpg'%}" class="image-fluid" >
+              </div>
+              <div class="item">
+                  <img src="{% static 'images/courses/scope-india-aws-certification-course-(1).jpg'%}" class="image-fluid">
+              </div> 
+              <!-- Add more items here -->
+            </div>
+            <div class="section-decoration bottom" style="background-image:url(https://scopeindia.org/images/snowpark-home-slide-decoration-bottomm.png);height:127px"></div>
+        </div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+          <script>
+              $(document).ready(function () {
+                  $("#owl-demo").owlCarousel({
+                      loop: true,
+                      autoplay: true,
+                      autoplayTimeout: 3000,
+                      autoplayHoverPause: true,
+                      items: 4,
+                      itemsDesktop: [1199, 3],
+                      itemsDesktopSmall: [979, 3]
+                  });
+              });
+          </script>
+       
+    <div class="container-fluid" style=" background-color: #f6f6f6;">
+      <div class="container" style="padding:40px;">
+       <div class="row" style="background-image: url(https://scopeindia.org/images/si-call-back-bg.jpg); padding-left: 5%; padding-right: 5%;">
+          <div class="col-md-6"> 
+              <img style="width: 100%; max-width: 450px; padding-top: 50px;padding-bottom: 50px; margin: 0 auto;" src="{% static 'images/scope-india-lets-discuss-your-career.jpg' %}" alt="Scope India Image">
+          </div>
+          <div class="col-md-6 bg-transparent" style="margin-top: 55px;">
+              <h2 style="color: #000c81; margin-top: 20px; text-align: center;">
+                  SCOPE INDIA<br>is open 365 days a year
+              </h2>
+              <p style="color: #000c81; margin-top: 30px; text-align: center;">
+                  We are open 7 days 24 hrs to talk to you and listen to your queries
+              </p>
+              <div class="call" style="margin-top: 30px; text-align: center;">
+                  <h3 style="color: #009318;">GET A FREE CALL BACK</h3>
+                  <div class="form-group">
+                      <input type="text" class="form-control" style="margin-top: 20px;" placeholder="Enter your name">
+                      <input type="text" class="form-control" style="margin-top: 20px;" placeholder="Enter your phone no.">
+                      <button type="button" id="bottom" class="btn btn-success form-control" style="background-color: #18cf36; color: #fff; margin-top: 20px;">Call Me</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+  
+    <div class="container text-center" style="padding-bottom: 20px;">
+    
+        <div class="col">
+          <a href="https://maps.app.goo.gl/BCgBih5C293PHiS48" target="_blank"><img src="{%static 'images/5star.png' %}"  class="image-fluid" style="width: 350px;  padding-top:20px;"></a>
+        </div>
+        <div class="text-center" style=" color:#000c81">
+          <p>
+            Google 4.9 * Rated Institute 
+            
+          </p>
+          <div style="font-size: 55px;font-weight: 700;">
+            SCOPE INDIA,your career partner!
+          </div>
+          <div style="font-size:30px;font-weight:700;">
+            One of the best Training Destination for Software, Networking <br>and Cloud Computing courses in India with 17 years of Industrial<br> experience.
+          </div>
+        </div>
+        <div class="text-center"style="color:#000c81 ;padding-left:48px; padding-right: 40px; margin-top: 20px;font-size:17px;">
+          <p>
+            Software, Networking, and Cloud Professional Education Centre in Kerala from Suffix E Solutions with WORKING PROFESSIONAL oriented on-the-job TRAINING model. 
+            SCOPE INDIA provides courses for <strong> Software Programmingc</strong> in Python (Data Science | Artificial Intelligence | Machine Learning | Deep Learning, 
+            Data Analytics), Java, PHP, .Net, <strong> Software Testing </strong> Manual and Automation, <strong> Cloud Computing </strong> (AWS | Azure), 
+            <strong> Server Administration </strong> (MCSE | RHCE), <strong> Networking </strong> (CCNA), <strong> Mobile App Development</strong> in Flutter, and 
+            <strong> Digital Marketing.</strong> Training with 100% Trusted Job Based Internship Model. SCOPE INDIA has a Strong Placement Cell that provides jobs to 
+            thousands of students every year. We assure you, you won't regret it after training from SCOPE INDIA!
+          </p>
+          <p>
+            This is how SCOPE INDIA can support both newbies and experienced in the industry to upgrade their skills.
+          </p>
+        </div>
+        <div class="text-center"style="padding-left:10px" >
+          <ul style="padding: 30px; margin: 15px; list-style-type: none;">
+            <li style="margin-top: 20px;">
+              <a href="/placement">
+                <button type="button" class="btn form-control" style="background-color: blueviolet; color: #fff; height: 55px;border-radius: 8px;"><span style="font-size: 23px;">Recent Placements</span></button>
+              </a>
+            </li>
+            <li style="margin-top: 20px;">
+              <a href="/courses">
+                <button type="button" class="btn form-control" style="background-color: skyblue; color: #fff;height: 55px;border-radius: 8px;"><span style="font-size: 23px;">Courses</span></button>
+              </a>
+            </li> 
+            <li style="margin-top: 20px;"> 
+              <a href="/register" >
+              <button type="button" class="btn form-control" style="background-color: #5ead5e; color: #fff;height: 55px;border-radius: 8px;"><span style="font-size: 23px;">Register Now!</span></button>
+            </a>
+            </li>
+            <li style="margin-top:20px;">
+              <button type="button" class="btn form-control" style="background-color: #5ead5e; color:#fff;height: 55px;border-radius: 8px;"><span style="font-size: 23px;">Chat on WhatsApp</span></button>
+          </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div> 
+  <div class="container1" style="background-color: #f6f6f6;padding-top: 20px;padding-bottom: 50px;">
+    <div class="container" style="padding-top:50px; background-color: #f6f6f6;">
+     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="card-group">
+        <div class="col">
+          <a href="/courses">
+          <img src="{% static 'images/snowpark-home-icon1.png' %}"class="card-img-top mx-auto d-block" style="width:100px;"></a>
+          <div class="card-body">
+            <h5 class="card-title">Training</h5>
+            <p class="card-text">
+              You are trained under Suffix E Solutions working professionals, on-the-job training model.
+            </p>
+            
+          </div>
+        </div>
+        <div class="col">
+          <a href="/courses">
+          <img src="{% static 'images/snowpark-home-icon2.png' %}" class="card-img-top mx-auto d-block" style="width:100px;"></a>
+          <div class="card-body">
+            <h5 class="card-title">Intership</h5>
+            <p class="card-text">After course completion, you will be proceeded to live projects with a 6 months experience certificate.</p>
+          </div>
+        </div>
+        <div class="col">
+          <a href="/courses">
+          <img src="{% static 'images/snowpark-home-icon3.png' %}" class="card-img-top mx-auto d-block" style="width:100px;"></a>
+          <div class="card-body">
+            <h5 class="card-title">Grooming</h5>
+            <p class="card-text">CV Preparation, Interview Preparation, and Personality Development.</p>
+          </div>
+        </div>
+        <div class="col">
+          <a href="/placement">
+          <img src="{% static 'images/snowpark-home-icon4.png' %}" class="card-img-top mx-auto d-block" style="width:100px;"></a>
+          <div class="card-body">
+            <h5 class="card-title">Placement</h5>
+            <p class="card-text">Gives 100% FREE placement support to all our fellow techies through SCOPE INDIA's Placement Cell.</p>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div> 
+       
+    
+     <footer class="text-center text-white" style="background-color:#021b5b;padding-top: 10px;">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-3">
+              <div >
+                <h4 class="text-primary yellowcolor"><b>1000+</b></h4>
+                <h5 style="color:#fff" id="pfooter"><b>STUDENTS ARE
+                    <br>TRAINED EVERY YEAR</b></h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3">
+              <div >
+                <h4 class="text-primary yellowcolor"><b>30+</b></h4>
+                <h5 class="text-white" id="pfooter"><b>COMPUTER COURSES</b></h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+                   <!-- Grid column -->
+            <div class="col-md-3">
+              <div >
+                <h4 class="text-primary yellowcolor">95%</h4>
+                <h5 class="text-white" id="pfooter"><b>STUDENTS ARE GETTING<br>PLACED EVERY YEAR</b></h5>
+              </div>
+            </div>
+            <!-- Grid column -->
+  
+         
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+            <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center pt-5" >
+            <div class="col-lg-8">
+              <img src="{% static 'images/snowpark-footer-logo.png' %}" class="img-fluid">
+            </div>
+            <div class="col-md-12">Center for Software, Networking, &amp; Cloud Education</div>
+            <div class="col-md-12">
+              Kerala: Technopark TVM | Thampanoor TVM | Kaloor Kochi, Tamil Nadu: Distillery Road | Palace Road Nagercoil</div>
+            </div>
+            <div class="pt-5">
+              <img src="{% static 'images/iso_iaflogo.png' %}" width="400" height="100">
+            </div>
+              <p style="text-align:center;">An ISO 9001:2015 Certified Company</p>
+              <p style="text-align:center;">All Rights Reserved Suffix E Solutions © 2007-2024</p>
+            </section>
+            <!-- Section: Text -->
+            <div class="row text-white justify-content-center " >
+                <div class="col-md-2"><a class="nav-link text-light" id="afooter" href="#" >9745936073 (TPK) </a></div>
+                <div class="col-md-2"><a class="nav-link text-light" id="afooter" href="#">9745936073 (TVM) </a></div>
+                <div class="col-md-2"><a class="nav-link text-light" id="afooter" href="#">9745936073 (TVM) </a></div>
+                <div class="col-md-2"><a class="nav-link text-light"id="afooter" href="#">9745936073 (TVM) </a></div>
+                <div class="col-md-2"><a class="nav-link text-light" id="afooter" href="#">info@scopeindia.org </a></div>
+                <br>
+                <br>
+    
+            </div>
+      
+          </div>
+          <br><br>
+         
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-VXHeS7u8kqYXRL52Q/d9fWm+L8u5X5zplxl0+e6BjfgFA2cvGzXzFCjOnchNI8G1" crossorigin="anonymous"></script> 
+    </body>
+    
+    </html>     
