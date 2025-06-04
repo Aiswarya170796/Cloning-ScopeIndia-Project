@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopeindia Website</title>
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #071e67; width:100%;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left-aligned Menu -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active text-light" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/courses">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/placement">Placement Cell</a>
+            </li>
+        </ul>
+
+        <!-- Centered Logo -->
+        <a class="navbar-brand mx-auto" href="/">
+            <img src="{% static 'images/scopeindia.logo.png' %}" alt="Logo" width="50px" height="40px">
+        </a>
+
+        <!-- Right-aligned Menu -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/know">Know SCOPE INDIA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/register"><span id="regid">Register Now</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/login"><span id="log">Login</span></a>
+            </li>
+        </ul>
+
+        <!-- Navbar Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+
+
+
+      <div class="container1" style="padding-top: 58px;">
+        <div class="col" style="padding-bottom: 100px;padding-top: 100px;background-color:#021b5b;background-image:url(https://scopeindia.org/images/snowpark-skis-headerbg2.jpg);height: 1000px;background-repeat: no-repeat;background-position:center ;background-attachment: fixed;">
+            <div class="container text-center">
+              <h1 style="color:rgb(238, 174, 46);font-size: 50px;padding-left: 30px;padding-top: 70px;font-weight: 700;">Placement Cell</h1>
+                <div class="col" style="padding-left: 25px;">
+                  <a href="https://maps.app.goo.gl/BCgBih5C293PHiS48" target="_blank">
+                  <img src="{%static 'images/5star.png' %}" style="width: 300px;  padding-top:10px;"></a>
+                  <p class="text-center" style="color:#fff;font-size:17px;">
+                    Google 4.9 * Rated Institute 
+                  </p>
+                  <p class="text-center" style="color:#fff;font-size: 25px;font-weight: 600;">
+                    1000's of Students are getting placed every year from SCOPE INDIA
+                  </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- Footer -->
+    <footer class="text-center text-white" style="background-color:#021b5b;">
+        <!-- Grid container -->
+        
+              <!-- Section: Text -->
+          <section class="mb-5">
+            <div class="row d-flex justify-content-center pt-5" >
+              <div class="col-lg-8">
+                <img src="{% static 'images/snowpark-footer-logo.png' %}" class="img-fluid">
+              </div>
+              <div class="col-md-12">
+                Center for Software, Networking, &amp; Cloud Education
+              </div>
+              <div class="col-md-12">
+                Kerala: Technopark TVM | Thampanoor TVM | Kaloor Kochi, Tamil Nadu: Distillery Road | Palace Road Nagercoil
+              </div>
+            </div>
+            <div class="pt-5">
+                <img src="{% static 'images/iso_iaflogo.png' %}" width="400" height="100">
+            </div>
+                <p style="text-align:center;">An ISO 9001:2015 Certified Company</p>
+                <p style="text-align:center;">All Rights Reserved Suffix E Solutions © 2007-2024</p>
+          </section>
+              <!-- Section: Text -->
+            <div class="row text-white justify-content-center " >
+                <div class="col-md-2"><a class="nav-link text-light" id="afooter" href="#" >9745936073 (TPK) </a></div>
+                <div class="col-md-2"><a class="nav-link text-light" id="afooter" href="#">9745936073 (TVM) </a></div>
+                <div class="col-md-2"><a class="nav-link text-light" id="afooter" href="#">9745936073 (TVM) </a></div>
+                <div class="col-md-2"><a class="nav-link text-light"id="afooter" href="#">9745936073 (TVM) </a></div>
+                <div class="col-md-2"><a class="nav-link text-light" id="afooter" href="#">info@scopeindia.org </a></div>
+                <br>
+                <br>
+            </div>
+            </div>
+            <br><br>
+    </footer>
+</body>
+</html>
